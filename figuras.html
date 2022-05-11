@@ -7,7 +7,66 @@
   <title>Figuras Geométricas</title>
 </head>
 <body>
-  <h1>Figuras Geométricas</h1>
+  <header>
+    <h1>Figuras Geométricas</h1>
+    <p>Primer taller</p>
+  </header>
+
+  <section>
+    <h2>Calcular área y perímetro de un cuadrado</h2>
+
+    <form action="">
+      <label for="squareInput">
+        Escribe cuánto mide un lado de tu cuadrado:
+      </label>
+      <input id="squareInput" type="number" />
+      
+      <button type="button" onclick="getSquarePerimeter()">Calcular Perímetro</button>
+      <button type="button" onclick="getSquareArea()">Calcular Área</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Calcular área y perímetro de un triángulo</h2>
+
+    <form action="">
+      <label for="triangleSide1Input">
+        Lado 1:
+      </label>
+      <input id="triangleSide1Input" type="number" />
+
+      <label for="triangleSide2Input">
+        Lado 2:
+      </label>
+      <input id="triangleSide2Input" type="number" />
+
+      <label for="triangleBaseInput">
+        Base:
+      </label>
+      <input id="triangleBaseInput" type="number" />
+
+      <label for="triangleHeightInput">
+        Altura:
+      </label>
+      <input id="triangleHeightInput" type="number" />
+
+      <button type="button" onclick="getTrianglePerimeter()">Calcular Perímetro</button>
+      <button type="button" onclick="getTriangleArea()">Calcular Área</button>
+    </form>
+
+  <section>
+    <h2>Calcular área y perímetro de un Círculo</h2>
+
+    <form action="">
+      <label for="circleRadiusInput">
+        Radio:
+      </label>
+      <input id="circleRadiusInput" type="number" />
+
+      <button type="button" onclick="getCirclePerimeter()">Calcular Perímetro</button>
+      <button type="button" onclick="getCircleArea()">Calcular Área</button>
+    </form>
+  </section>
 
   <script src="figuras.js"></script>
 </body>
