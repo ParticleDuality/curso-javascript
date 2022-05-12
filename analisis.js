@@ -1,6 +1,5 @@
 // Helpers
 function calculateAverage (list){
-  console.log(list);
   const listSum = list.reduce((accumulator = 0, element) => accumulator + element)
   
   return listSum / list.length
@@ -16,7 +15,6 @@ const salariesSorted = salaries.sort((prevValue, nextValue) => prevValue - nextV
 const salaryMedian = (list) => {
   let result = null
   const half = parseInt(list.length / 2)
-  console.log(half);
 
   isEven(list.length) ? result = calculateAverage([list[half - 1], list[half]]) : result = list[half]
 
